@@ -46,4 +46,9 @@ class Products {
     this.discount,
     this.colors,
   });
+
+  factory Products.fromJson(Map<String, dynamic> json) =>
+      _$ProductsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ProductsToJson(this);
 }
